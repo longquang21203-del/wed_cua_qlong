@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web của Quang Long</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      background: linear-gradient(
+        135deg, #090979, #4b0082, #00bfff
+      );
+      background-size: 300% 300%;
+      animation: nen 8s ease infinite;
+      padding: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 450px;
+      padding: 40px 25px;
+      background: rgba(255, 255, 255, 0.10);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 25px;
+      box-shadow: 0 0 35px rgba(0, 200, 255, 0.3);
+      backdrop-filter: blur(12px);
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #72e7ff;
+      margin-bottom: 18px;
+      text-shadow: 0 0 15px #00cfff;
+    }
+
+    h2 {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #eeeeff;
+      margin-bottom: 25px;
+    }
+
+    button {
+      padding: 14px 28px;
+      border: none;
+      border-radius: 30px;
+      background: #00d5ff;
+      color: #071225;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 25px #00d5ff;
+    }
+
+    #thongbao {
+      margin-top: 22px;
+      font-weight: bold;
+      color: #72ffcf;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #ccccff;
+    }
+
+    @keyframes nen {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>Xin chào 👋</h1>
+
+    <h2>Web của Quang Long</h2>
+
+    <p>
+      Chào mừng bạn đến với website của mình!
+      <br>
+      Đây là trang web cá nhân của Quang Long.
+    </p>
+
+    <button onclick="chao()">Nhấn vào đây ✨</button>
+
+    <div id="thongbao"></div>
+
+    <footer>© 2026 Quang Long | Made with ❤️</footer>
+  </div>
+
+  <script>
+    function chao() {
+      document.getElementById("thongbao").innerText =
+        "Xin chào! Cảm ơn bạn đã ghé thăm web của Quang Long 🎉";
+    }
+  </script>
+</body>
+</html>
