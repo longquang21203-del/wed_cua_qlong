@@ -1,1 +1,2 @@
-# wed_cua_qlong
+# xin chào
+# mình là qlong
