@@ -1,2 +1,2 @@
-# xin chào
+# xin chao
 # mình là qlong
